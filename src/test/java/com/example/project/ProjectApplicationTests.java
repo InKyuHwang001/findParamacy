@@ -1,10 +1,10 @@
-package com.findparamacy;
+package com.example.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FindParamacyApplicationTests {
+class ProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
