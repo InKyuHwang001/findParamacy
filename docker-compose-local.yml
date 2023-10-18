@@ -5,7 +5,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./redis
-    image: zcx5674/pharmacy-recommendation-redis
+    image: hwanginkyu42/pharmacy-recommendation-redis
     ports:
       - "6379:6379"
   pharmacy-recommendation-database:
@@ -13,11 +13,11 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./database
-    image: zcx5674/pharmacy-recommendation-database
+    image: hwanginkyu42/pharmacy-recommendation-database
     environment:
       - MARIADB_DATABASE=pharmacy-recommendation
       - MARIADB_ROOT_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
     volumes:
       - ./database/config:/etc/mysql/conf.d
     ports:
-      - "3306:3306"
+      - "3307:3306"
